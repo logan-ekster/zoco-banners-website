@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Plan Your Banner | Zoco Banners</title>
+<meta name="description" content="Plan your custom banner and write your order message for Zoco Banners in seconds.">
+<meta property="og:title" content="Plan Your Banner | Zoco Banners">
+<meta property="og:description" content="Plan your custom banner and write your order message for Zoco Banners in seconds.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.zocobanners.com/plan">
+<link rel="canonical" href="https://www.zocobanners.com/plan">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Montserrat:wght@400;500;600&family=Caveat:wght@500&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav>
+  <div class="wrap">
+    <a class="logo" href="index.html">Zoco Banners</a>
+    <ul>
+      <li><a href="work.html">Work</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="order.html">How to order</a></li>
+      <li><a href="plan.html" aria-current="page">Plan yours</a></li>
+      <li><a href="pickup.html">Pick-up</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+<section id="plan">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Plan your banner</p>
+      <h2>Write your DM here</h2>
+      <p>Fill this in and copy the message straight into Instagram. It covers everything I need to get started.</p>
+    </div>
+    <div class="planner">
+      <form id="f" autocomplete="off">
+        <div class="row">
+          <label for="size">Size
+            <select id="size"></select>
+          </label>
+          <label for="date">Needed by
+            <input id="date" type="date">
+          </label>
+        </div>
+        <p class="note" id="dateNote" aria-live="polite"></p>
+        <label for="event">Event
+          <input id="event" type="text" value="Baby shower">
+        </label>
+        <label for="words">Words on the banner
+          <input id="words" type="text" value="Oh baby, it's a girl!">
+        </label>
+        <label for="theme">Theme, colors &amp; graphics
+          <textarea id="theme">Soft pink and cream, little bows and daisies</textarea>
+        </label>
+      </form>
+      <div class="preview kraft">
+        <h3>Your message</h3>
+        <pre id="msg"></pre>
+        <p class="total" id="total"></p>
+        <div class="btns" style="margin-top:0">
+          <button class="btn primary" id="copy" type="button">Copy message</button>
+          <a class="btn ghost" style="background:var(--lace)" href="https://ig.me/m/zocobanners" target="_blank" rel="noopener">Open Instagram DM</a>
+        </div>
+        <p class="copied" id="copied" aria-live="polite"></p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="logo">Zoco Banners</div>
+  <p>Made by Zoë Baker · Custom kraft paper banners · McAdenville &amp; Gastonia, NC · <a href="https://www.instagram.com/zocobanners/" target="_blank" rel="noopener">@zocobanners</a></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
